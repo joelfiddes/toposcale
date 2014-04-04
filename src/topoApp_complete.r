@@ -2,7 +2,7 @@
 #=======================================================================================================
 #			SET EXPERIMENT ROOT
 #=======================================================================================================
-root="~/toposcale-master/"
+root="~/toposcale/"
 
 #======================================================================================
 #				CODE
@@ -29,7 +29,7 @@ print(nbox)
 	source(paste(root,'/src/expSetupLoop.r',sep=''))
 
 ##make listpoints and surface
-	source(paste(root,'/src/TopoAPP/subsetPoints.R',sep=''))
+	source(paste(root,'/src/subsetPoints.R',sep=''))
 
 #TOPOSCALE PARALLEL requires linux programme parallel
 if(parTscale==TRUE){
