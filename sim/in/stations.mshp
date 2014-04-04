@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SAGA_METADATA>
+  <HISTORY>
+    <MODULE>Proj.4 (Command Line Arguments, Shapes)</MODULE>
+    <OPTION type="text" id="SOURCE_PROJ" name="Source Projection Parameters">+proj=utm +zone=43 +ellps=WGS84 +datum=WGS84 +units=m +no_defs </OPTION>
+    <OPTION type="text" id="TARGET_PROJ" name="Target Projection Parameters">+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs</OPTION>
+    <DATA type="shapes" id="SOURCE" name="Source">
+      <FILE>/home/joel/toposcale/sim/in/stations.shp</FILE>/home/joel/toposcale/sim/in/stations.shp</DATA>
+  </HISTORY>
+  <SOURCE>
+    <FILE>/home/joel/toposcale/sim/in/stations.shp</FILE>
+    <DATABASE></DATABASE>
+    <PROJECTION></PROJECTION>
+  </SOURCE>
+</SAGA_METADATA>

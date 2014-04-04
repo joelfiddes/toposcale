@@ -1,0 +1,20 @@
+#find points in box
+
+## get obs in grid box10
+## shapefile of val points
+require(raster)
+box<-nbox
+#master='/home/joel/src/hobbes/_master/'
+#spath='/home/joel/src/hobbes/results_points/b8/'
+points_shp=points_shp
+#points_shp$id<-1:length(points_shp[,1])
+cp=dshp2
+#lc=raster(paste(master,'/topo/lc.tif',sep=''))
+#mf=mf
+
+## shapefile of points cut by ERA box
+dat_cut=points_shp[cp[box,],]
+dat_cut$id<-1:length(dat_cut[,1]) # change id from 1:n
+write.table(dat_cut, paste(spath, '/listpoints.txt', sep=''), sep=',', row.names=F)
+
+

@@ -8,10 +8,8 @@
 #				POINTS
 #===========================================================================
 #Get points meta data - loop through box directories
-mf=read.table(listpoints,header=T,sep=',')
-
+mf=read.table(paste(spath, '/listpoints.txt', sep=''),header=T,sep=',')
 npoints=length(mf$id)
-
 
 #find ele diff station/gidbox
 eraBoxEle<-getEraEle(dem=eraBoxEleDem, eraFile=tFile) # $masl

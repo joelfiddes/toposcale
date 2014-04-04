@@ -28,7 +28,8 @@ print(nbox)
 	print(paste('*** SET UP BOX ', nbox,' SIMULATION DIRECTORIES ***',sep=''))
 	source(paste(root,'/src/expSetupLoop.r',sep=''))
 
-
+##make listpoints and surface
+	source(paste(root,'/src/TopoAPP/subsetPoints.R',sep=''))
 
 #TOPOSCALE PARALLEL requires linux programme parallel
 if(parTscale==TRUE){

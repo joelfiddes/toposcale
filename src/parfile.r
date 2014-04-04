@@ -71,11 +71,15 @@ dshp2=shapefile(paste(root,'/sim/in/ERADomainWGS.shp',sep=''))#domain shp for ge
 climtolP=FALSE # default = FALSE
 if(climtolP==TRUE){
 #precip grids
-subWeights=paste(topoRoot,'/subWeights.tif',sep='')
-idgrid=paste(topoRoot,'/idgrid.tif',sep='')
+subWeights=paste(root,'/sim/in//subWeights.tif',sep='')
+idgrid=paste(root,'/sim/in//idgrid.tif',sep='')
 }
 
-listpoints=paste(root,'/sim/in/listpoints.txt',sep='') #location of tscale points
+#listpoints=paste(root,'/sim/in/listpoints.txt',sep='') #location of tscale points
+
+#shapefile of points to simulate attributes ele, slp, asp, svf [note attribute headings lowercase]
+points_shp=shapefile(paste(root,'/sim/in/stations.shp',sep=''))
+
 #===============================================================================
 #				ERA FETCH PARAMETERS
 #=============================================================================

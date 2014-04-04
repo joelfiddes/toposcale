@@ -2,7 +2,7 @@
 #=======================================================================================================
 #			SET EXPERIMENT ROOT
 #=======================================================================================================
-root="/home/joel/tscale_local_slim/"
+root="/home/joel/tscale_local/"
 
 #======================================================================================
 #				CODE
@@ -23,9 +23,12 @@ source(paste(root,'/src/toposcale_pre.r',sep=''))
 ## loop through grid boxs
 for(nbox in nboxSeq){
 print(nbox)
+	listpoints=paste(root,'/sim/in/listpoints_',nbox,'.txt',sep='') 
 	simindex=formatC(nbox, width=5,flag='0')
 	print(paste('*** SET UP BOX ', nbox,' SIMULATION DIRECTORIES ***',sep=''))
 	source(paste(root,'/src/expSetupLoop.r',sep=''))
+
+
 
 #TOPOSCALE PARALLEL requires linux programme parallel
 if(parTscale==TRUE){
