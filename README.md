@@ -8,5 +8,5 @@ Published here: http://www.the-cryosphere.net/9/411/2015/tc-9-411-2015.html
 Fiddes, J. and Gruber, S.: TopoSCALE v.1.0: downscaling gridded climate data in complex terrain, Geosci. Model Dev., 7, 387-405, doi:10.5194/gmd-7-387-2014, 2014.
 
 # Licence
-GSN is licensed under the GNU GPL license, version 3 (or later). Basically, it grants you the rights to use, redistribute and modify TopoSCALE. However, if you want to redistribute a modified version of TopoSCALE, you must provide the complete source code of your modifications.
+TopoSCALE is licensed under the GNU GPL license, version 3 (or later). Basically, it grants you the rights to use, redistribute and modify TopoSCALE. However, if you want to redistribute a modified version of TopoSCALE, you must provide the complete source code of your modifications.
 
